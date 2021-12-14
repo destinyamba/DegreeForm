@@ -1,0 +1,346 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 10vh;
+  background-image: url("../img/bck.jpg");
+  background-size: cover;
+  display: absolute;
+  position: static;
+  box-sizing: border-box;
+  font-family: "Baloo Tammudu 2", sans-serif;
+}
+
+#full-page {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: static;
+}
+
+/** LOGO DIMENSIONS **/
+
+.logo {
+  padding-left: 20px;
+  margin-left: 10px;
+  height: 150px;
+  width: 250px;
+  position: absolute;
+}
+
+/** NAVIGATION BAR DIMENSIONS **/
+
+.nav-bar {
+  display: inline-block;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #fafafa;
+}
+
+.nav-bar ul {
+  list-style: none;
+  background-position: absolute;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  background: rgba(0, 0, 0, 0.281);
+  display: block;
+}
+
+.nav-bar li {
+  display: inline-block;
+  text-align: center;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  width: 150px;
+  display: inline-block;
+  padding: 20px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Baloo Tammudu 2", sans-serif;
+}
+
+.nav-bar ul li a {
+  line-height: 80px;
+  color: #fff;
+  text-align: center;
+}
+
+.nav-bar a:hover {
+  background: rgba(204, 204, 204, 0.548);
+  color: #000;
+  transition: -10s;
+}
+
+/** LOGIN FORM DIMENSIONS **/
+
+#login {
+  margin: 0 auto;
+  padding: 30px;
+  margin-bottom: 40px;
+  width: 40%;
+  height: 70vh;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.884);
+  font-size: 35px;
+  line-height: 30px;
+  border-radius: 50px;
+}
+
+h2 {
+  color: rgba(24, 149, 190, 0.788);
+  font-family: "Baloo Tammudu 2", sans-serif;
+}
+
+.form-box {
+  margin: 0 auto;
+  padding: 50px;
+  width: 100%;
+  height: 65vh;
+  line-height: 30px;
+  color: rgb(255, 255, 255);
+  background-size: 50%;
+  font-size: 20px;
+  /**background-color: rgba(0, 0, 0, 0.699);**/
+  text-align: left;
+  border: none;
+}
+
+.form-box .loginput1 {
+  border: none;
+  outline: 0px none;
+  position: relative;
+  background: none;
+  color: #fff;
+  padding: 30px;
+  height: 20px;
+  width: 100%;
+  border-bottom: 2px solid rgba(24, 149, 190, 0.788);
+  font-size: 17px;
+  font-family: "Baloo Tammudu 2";
+}
+
+.loginput2 {
+  border: none;
+  outline: 0px none;
+  position: relative;
+  height: 20px;
+  background: none;
+  color: #fff;
+  padding: 30px;
+  width: 100%;
+  border-bottom: 2px solid rgba(24, 149, 190, 0.788);
+  font-size: 17px;
+}
+
+.check-box {
+  position: relative;
+  text-align: left;
+  font-family: "Baloo Tammudu 2";
+  font-size: 15px;
+  display: block;
+  left: 0px;
+  right: 10px;
+  float: left;
+  border: none;
+  outline: 0px none;
+  line-height: 20px;
+  margin-top: 17px;
+}
+
+a {
+  font-size: 15px;
+  color: #fff;
+  text-align: right;
+  display: inline-block;
+  font-family: "Baloo Tammudu 2", sans-serif;
+  padding: 10px;
+  align-items: right;
+  float: right;
+}
+
+a:hover {
+  color: aqua;
+}
+.btn {
+  margin: 0 auto;
+  display: block;
+  font-size: 30px;
+  border-radius: 30px;
+  border: none;
+  height: 50px;
+  width: 80%;
+  background-color: rgba(24, 149, 190, 0.788);
+  color: #fff;
+  font-weight: bolder;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Baloo Tammudu 2", sans-serif;
+  position: relative;
+  top: 10vh;
+}
+
+.btn:hover {
+  background-image: linear-gradient(
+    rgba(86, 194, 230, 0.808),
+    rgba(44, 109, 139, 0.637),
+    rgba(17, 100, 126, 0.685)
+  );
+}
+/** END OF LOGIN FORM **/
+
+/** MEDIA QUERIES**/
+
+@media screen and (max-width: 500px) {
+  body {
+    background-image: url("../img/bck.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 500px 900px;
+  }
+
+  .logo {
+    width: 50%;
+    height: 110px;
+    position: static;
+    padding-bottom: 15px;
+    margin-left: 120px;
+    background: rgba(0, 0, 0, 0.281);
+    display: block;
+  }
+
+  .nav-bar {
+    display: block;
+    position: absolute;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    height: 190px;
+    border: none;
+    border-bottom: 2px solid #fafafa;
+  }
+
+  .nav-bar ul li a {
+    padding: 0px;
+    margin: 0 auto;
+    height: 20px;
+    width: 500px;
+    line-height: 20px;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    float: left;
+    display: block;
+  }
+
+  #login {
+    width: 400px;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 210px;
+  }
+
+  .form-box {
+    width: 300px;
+  }
+
+  .loginput1,
+  .loginput2 {
+    width: 200px;
+    margin-left: 0px;
+  }
+
+  a {
+    float: left;
+  }
+
+  .btn {
+    width: 200px;
+    margin-top: 340px;
+    margin-left: 0px;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-image: url("../img/bck.jpg");
+    background-size: 1050px 900px;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+
+  .logo {
+    width: 30%;
+    height: 150px;
+    position: static;
+    padding-bottom: 10px;
+    margin-left: 320px;
+    background: rgba(0, 0, 0, 0.281);
+    display: block;
+  }
+
+  .nav-bar {
+    display: block;
+    position: absolute;
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    height: 190px;
+    border: none;
+    border-bottom: 2px solid #fafafa;
+  }
+
+  .nav-bar ul li a {
+    padding: 0px;
+    margin: 0 auto;
+    height: 20px;
+    width: 900px;
+    line-height: 20px;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    float: left;
+    display: block;
+  }
+
+  #login {
+    width: 500px;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 210px;
+  }
+
+  .form-box {
+    width: 500px;
+  }
+
+  .loginput1,
+  .loginput2 {
+    width: 400px;
+    margin-left: 0px;
+  }
+
+  a {
+    float: right;
+  }
+
+  .btn {
+    width: 300px;
+    margin-top: 340px;
+    margin-left: 20px;
+    position: absolute;
+  }
+}
